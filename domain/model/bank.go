@@ -1,17 +1,22 @@
 package model
 
 import (
+	"github.com/asaskevich/govalidator"
 	uuid "github.com/satori/uuid.go"
 	"time"
 )
 
 type Bank struct {
-	Base
-	Code string `json:"code"`
-	Name string `json:"name"`
+	Base `valid:"required"`
+	Code string `json:"code" valid:"notnull"`
+	Name string `json:"name" valid:"notnull"`
 }
 
-func (b *Bank) isValid() error {
+func (bank *Bank) isValid() error {
+	_, err := govalidator.ValidateStruct(bank)
+	if err != nil {
+		return err
+	}
 	return nil
 }
 
