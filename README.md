@@ -5,10 +5,13 @@ CodePix simulates transfers of different amounts of money via PIX, Brazil's Cent
 * [How to execute](#how-to-execute)
 
 ## How to execute
-Let's use Docker to get all of our services up and running.
-Fire up a terminal and let's get going
-* Clone the project repo, i'm using SSH but you can use HTTP or the GitHub CLI, you can get it on the ``< > Code`` button:
+In order to get all of our services up and running we are going to use Docker. <br>
+Fire up a terminal and let's get going.
+* Clone the repo, i'm using SSH but you can use HTTP or the GitHub CLI:
 ```bash
-git@github.com:gabrielparaizo/CodePix.git
+git clone git@github.com:gabrielparaizo/CodePix.git
 ```
-    
+* After cloning the repo you can get all services running by typing:
+```bash
+docker compose up -d
+```
