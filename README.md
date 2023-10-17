@@ -18,3 +18,7 @@ docker compose up -d
 ```
 
 ## How to execute the application
+* Access the application container:
+```bash
+docker exec -it codepix-app-1 bash
+```
