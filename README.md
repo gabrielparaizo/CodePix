@@ -15,3 +15,8 @@ git clone git@github.com:gabrielparaizo/CodePix.git
 ```bash
 docker compose up -d
 ```
+
+* After cloning the repo you can get all services running by typing:
+```bash
+docker compose up -d
+```
